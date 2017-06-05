@@ -19,10 +19,10 @@ var TimeWizard = {
     mH = TimeWizard.checkTime(mH);
     sH = TimeWizard.checkTime(sH);
     hH = TimeWizard.checkTime(hH);
-
+    // ===== Clocks Display =====
     document.getElementById("realClock").innerHTML = h + ":" + m + ":" + s;
     document.getElementById("hexClock").innerHTML = hH + ":" + mH + ":" + sH;
-// ====== Background Change
+    // ====== Background Change ======
     var r = parseInt(s) * 1;
     var g = parseInt(s) * 3;
     var b = parseInt(s) * 5;
@@ -32,19 +32,18 @@ var TimeWizard = {
       TimeWizard.updateTime()
     }, 1000);
   },
-// ====== Real Time to Hexadecimal Time
+  // ====== Real Time to Hexadecimal Time =======
   hexTime: function(num) {
     // console.log("== hexTime ==");
     hexString = num.toString(16);
     // console.log("hexString:", hexString);
     return hexString;
   },
-
+  // ======  CheckTime ======
   checkTime: function(i) {
     // console.log("== checkTime ==");
-    return (i < 10) ? "0" + i : i;
+    return (i.length < "2" ) ? "0" + i : i;
   }
-
 
 };
 TimeWizard.initialize();
