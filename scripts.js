@@ -8,6 +8,9 @@ var TimeWizard = {
     var today = new Date();
     // ===== Real Clock =====
     var h = today.getHours();
+    if (h > 12) {
+      h = h - 12;
+    };
     var m = today.getMinutes();
     var s = today.getSeconds();
     m = TimeWizard.checkTime(m);
