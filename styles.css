@@ -17,7 +17,7 @@ body {
 
 /*======= Clock Content =======*/
 #Clocks-Container {
-  background-color: #F7E923;
+  /*background-color: #F7E923;*/
 }
 
 #realClock {
@@ -25,9 +25,8 @@ body {
   width: 200px;
   margin: auto;
   text-align: center;
-  /*vertical-align: middle;*/
   font-size: 40px;
-  line-height: 100px;
+  line-height: 200px;
 }
 
 #hexClock {
@@ -36,5 +35,5 @@ body {
   margin: auto;
   text-align: center;
   font-size: 40px;
-  vertical-align: middle;
+  line-height: 200px;
 }
