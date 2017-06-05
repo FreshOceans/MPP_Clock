@@ -1,0 +1,32 @@
+/*======= Body ======= */
+body {
+  background-color: #FDC33C;
+}
+
+/*======== Header =======*/
+h1 {
+  color: #B23EF6;
+  text-align: center;
+}
+
+/*======== Footer =======*/
+#footer {
+  text-align: center;
+}
+
+/*======= Clock Content =======*/
+#realTime {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  text-align: center;
+  font-size: 40px;
+}
+
+#hexClock {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  text-align: center;
+  font-size: 40px;
+}
