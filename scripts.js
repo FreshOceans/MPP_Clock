@@ -26,10 +26,7 @@ var TimeWizard = {
     document.getElementById("realClock").innerHTML = h + ":" + m + ":" + s;
     document.getElementById("hexClock").innerHTML = hH + ":" + mH + ":" + sH;
     // ====== Background Change ======
-    var r = parseInt(s) * 1;
-    var g = parseInt(s) * 3;
-    var b = parseInt(s) * 5;
-    document.getElementById("Clocks-Container").style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+    document.getElementById("Clocks-Container").style.backgroundColor = 'rgb(' + hH + ',' + mH + ',' + sH + ')';
 
     t = setTimeout(function() {
       TimeWizard.updateTime()
@@ -45,7 +42,7 @@ var TimeWizard = {
   // ======  CheckTime ======
   checkTime: function(i) {
     // console.log("== checkTime ==");
-    return (i.length < "2" ) ? "0" + i : i;
+    return (i.length < 2 ) ? "0" + i : i;
   }
 
 };
